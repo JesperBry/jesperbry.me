@@ -1,3 +1,1 @@
-# jesperbry.me
-
-## Under development
+# Under development
