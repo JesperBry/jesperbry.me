@@ -1,3 +1,6 @@
+<p align="center"> 
+<img src="https://github.com/JesperBry/jesperbry.me/blob/master/img/Logo.png">
+</p>
 # Under development
 
 ## Built With
