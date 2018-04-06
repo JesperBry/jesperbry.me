@@ -65,7 +65,7 @@ div#bigImg {
     justify-content: flex-start;
     align-content: flex-start;
 
-    background-image: url('images/ref.jpg');
+    background-image: url('images/placeholder_headImg.jpg');
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
