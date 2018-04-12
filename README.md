@@ -2,7 +2,7 @@
   <img src="https://github.com/JesperBry/jesperbry.me/blob/master/img/Logo.png" width="200" height="200">
 </p>
 
-# Under development
+# In development
 https://jesperbry.github.io/jesperbry.me/
 
 ## Built With
