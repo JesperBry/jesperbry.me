@@ -26,6 +26,21 @@ p {
 .menu {
 }
 
+div.menu a#mobile_menu {
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+}
+
+@media screen and (max-width: 600px)  {
+  div.menu a#desktop_menu {
+    display: none;
+  }
+  div.menu a#mobile_menu {
+    color: #1a1a1a;
+  }
+}
+
 .button-collapse {
   position:fixed;
   top:20px;
@@ -65,15 +80,18 @@ div#bigImg {
     justify-content: flex-start;
     align-content: flex-start;
 
-    background-image: url('images/placeholder_headImg.jpg');
+    background-image: url('images/test.jpg');
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
     /*background-attachment: fixed; /* create parallax effect*/
-    width: 34%;
+    width: 100%;
     height: 100%;
     position: absolute;
     z-index: -99999;
+    filter: blur(50px);
+    -webkit-filter: blur(50px); /* Safari 6.0 - 9.0 */
+    opacity: 0.5;
 }
 
 /*
@@ -91,6 +109,7 @@ div#sImg {
 }
 */
 
+/*
 h1 a {
   font-family: 'Graphik';
   color: #1a1a1a;
@@ -99,6 +118,20 @@ h1 a {
   padding: 20px 20px 20px 20px;
   font-weight: 600;
   font-style: normal;
+}
+*/
+h1 a {
+  font-weight: lighter;
+  color: #fafafa;
+  font-size: 75px;
+  background-color: #212121;
+  padding: 8px 20px 8px 20px;
+}
+
+@media screen and (max-width: 600px) {
+  h1 a {
+    font-size: 30px;
+  }
 }
 
 h4 {
@@ -112,17 +145,12 @@ h4 {
   margin-bottom: 25px;
 }
 
-header a i#expand {
+header a.expand-animation i#expand {
   color: #1a1a1a;
   display: flex;
-  position: absolute;
-  bottom: 0;
-  flex-direction: column;
-  justify-content: center;
   align-items: flex-end;
 }
 
-/*
 header a.expand-animation {
   animation: animationFrames ease 1s;
   animation-iteration-count: 1;
@@ -200,19 +228,18 @@ header a.expand-animation {
     -ms-transform:  translate(0px,0px);
   }
 }
-*/
 
 /**
 * Sections
 */
 #aboutMe {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 200px;
+  margin-bottom: 120px;
 }
 
 div section h4#aboutHeader {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 #parallax-image {
@@ -221,7 +248,8 @@ div section h4#aboutHeader {
     -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
 }
 
-#Work {
+div section h4#Work {
+  margin-bottom: 40px;
 }
 
 /* Photo grid */
