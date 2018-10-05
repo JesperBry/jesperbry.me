@@ -21,6 +21,7 @@ body {
 }
 
 p {
+  color: #1a1a1a;
   font-size: 1.6rem;
 }
 
@@ -62,11 +63,11 @@ p {
 
 a {
   color: #1a1a1a;
-}
-
-p {
-  color: #1a1a1a;
-  font-size: large;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 #contact {
