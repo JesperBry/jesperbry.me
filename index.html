@@ -6,13 +6,15 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Import Google/fa Icon Font-->
+    <!--Import Google/font-awesom Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--Import bootstrap & jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="assets/css/graphik.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/animate-min.css">
@@ -23,143 +25,92 @@
 
     <body onload="document.body.style.opacity='1'">
 
-        <div id="bigImg"></div>
-        <header>
-          <h1><a href="index.html">Jesper Brynildsen<span style="color: #27ae60">.</span></a></h1>
-
-          <!-- Menu -->
-          <div class="menu">
-            <ul id="slide-out" class="side-nav">
-              </br>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#aboutMe">About me</a></li>
-              <li><a href="#work">Work</a></li>
-              <li><a href="#contact">Get in contact</a></li>
-            </ul>
-            <a href="#" data-activates="slide-out" class="button-collapse" id="desktop_menu"><i class="material-icons">menu</i>&nbsp;MENU</a>
-            <a href="#" data-activates="slide-out" class="button-collapse" id="mobile_menu"><i class="material-icons">menu</i></a>
+      <!-- Navbar -->
+        <nav class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="border: none; background: none;">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Jesper Brynildsen</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#aboutMe">HVEM</a></li>
+                <li><a href="#work">HVA</a></li>
+                <li><a href="#contact">HVOR</a></li>
+              </ul>
+            </div>
           </div>
+        </nav>
 
-          <div class="arrow">
-            <a href="#aboutMe" class="expand-animation"><i id="expand" class="medium material-icons">expand_more</i></a>
-          </div>
-        </header>
-
-      <div class="container">
-        <!-- About me -->
-					<section id="aboutMe">
-            <h4 id="aboutHeader">About me</h4>
-              <p ALIGN=CENTER>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum egestas scelerisque. In eu velit a urna elementum semper. Sed at lorem ut massa efficitur viverra. Quisque rutrum turpis sit amet dui pulvinar tincidunt. Etiam a leo risus. Duis sit amet tincidunt felis. Pellentesque vel dictum arcu. Morbi tincidunt mauris vel libero pulvinar convallis. Pellentesque et dignissim neque. In sollicitudin lectus non dolor feugiat molestie. Quisque efficitur facilisis erat, nec egestas dui euismod in. Cras viverra feugiat mollis.
-
-                Phasellus aliquet, arcu fermentum consequat rhoncus, tellus lorem pulvinar elit, at tristique est ipsum at arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque at metus vel eleifend. Maecenas quis lectus nec magna euismod vehicula vitae sed lorem. Donec sit amet eros ac lacus commodo tristique eu sed augue. Integer tincidunt libero risus, ut mollis lectus facilisis vitae. Nunc in tortor non lorem cursus vulputate. Phasellus accumsan, arcu at accumsan
-              </p>
-          </section>
+      <!-- About Container -->
+        <div class="container-fluid  text-center">
+          <h3 class="margin"></h3>
+          <img src="./img/logo.png" class="img-responsive img-circle margin" style="display:inline" alt="logo">
+          <h3>Lorem ipsum dolor.</h3>
         </div>
 
-        <div class="parallax-container" id="parallax-image">
-            <div class="parallax"><img src="images/code.jpg" style=" width:100%; height:auto;"></div>
+      <!-- About Container -->
+        <div class="container-fluid text-center" id="aboutMe">
+          <h3 class="margin">Om meg!</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam ducimus tempore recusandae, amet odio impedit vero nostrum deserunt rem placeat nemo maxime,
+            aliquam vitae quos pariatur voluptate voluptas, illo consectetur delectus molestias hic ratione quaerat inventore cumque? Harum necessitatibus ullam, explicabo
+            quidem illum? Eius qui incidunt suscipit deleniti, quae facilis nulla reprehenderit officia, sint voluptate a molestias, earum culpa similique obcaecati. Tempore itaque
+             placeat autem nemo, non aliquam consectetur et eum recusandae rem possimus illo iste, quidem veritatis cupiditate maiores deleniti optio? Et quos, adipisci nemo similique
+             deleniti quo maxime quas tempore unde recusandae expedita odit, quia, obcaecati aperiam illo.
+          </p>
         </div>
 
-        <div class="container">
-          <!-- My work -->
-  					<section id="work">
-              <h4>My work</h4>
-              <p ALIGN=CENTER>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum egestas scelerisque. In eu velit a urna elementum semper. Sed at lorem ut massa efficitur viverra. Quisque rutrum turpis sit amet dui pulvinar tincidunt. Etiam a leo risus. Duis sit amet tincidunt felis. Pellentesque vel dictum arcu. Morbi tincidunt mauris vel libero pulvinar convallis.
-              </p>
-
-              <!-- Tab links -->
-              <div class="tab">
-                <button class="tablink" onclick="openTab(event, 'code')" id="default">Code</button>
-                <p id="separator">/</p>
-                <button class="tablink" onclick="openTab(event, 'design')">UX</button>
-              </div>
-
-              <!-- Tab content -->
-              <div id="code" class="tabcontent">
-                <!-- Photo Grid -->
-                <div class="row">
-                  <div class="column">
-                    <img src="images/placeholder.png" style="width:100%">
-                    <img src="images/placeholder.png" style="width:100%">
-                  </div>
-                  <div class="column">
-                    <img src="images/placeholder.png" style="width:100%">
-                    <img src="images/placeholder.png" style="width:100%">
-                  </div>
-                  <div class="column">
-                    <img src="images/placeholder.png" style="width:100%">
-                    <img src="images/placeholder.png" style="width:100%">
-                  </div>
-                </div>
-              </div>
-              <div id="design" class="tabcontent">
-                <!-- Photo Grid -->
-                <div class="row">
-                  <div class="column">
-                    <img src="images/placeholder.png" style="width:100%">
-                    <img src="images/placeholder.png" style="width:100%">
-                  </div>
-                  <div class="column">
-                    <img src="images/placeholder.png" style="width:100%">
-                    <img src="images/placeholder.png" style="width:100%">
-                  </div>
-                  <div class="column">
-                    <img src="images/placeholder.png" style="width:100%">
-                    <img src="images/placeholder.png" style="width:100%">
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <!-- My work -->
-    					<section id="contact">
-                <div class="mailto">
-                  <a href="mailto:jespebr@stud.ntnu.no?subject=">jespebr@stud.ntnu.no</a>
-                </div>
-              </section>
-
-            <!-- Sosial Media -->
-              <section class="sosial-media">
-                <a href="https://www.instagram.com/jesperbry/" class="fa fa-instagram"></a>
-                <a href="https://no.linkedin.com/in/jesperbrynildsen" class="fa fa-linkedin"></a>
-                <a href="https://www.youtube.com/channel/UCTwKP9Qsc_nqwqXOUeFC6jg" class="fa fa-youtube"></a>
-                <a href="https://github.com/JesperBry" class="fa fa-github"></a>
-              </section>
-
+      <!-- Work Container -->
+      <div class="container-fluid work text-center" id="work">
+        <h3 class="margin">Hva gjør jeg?</h3><br>
+        <div class="row">
+          <div class="col-sm-4">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores officiis aut libero illo debitis, temporibus quis facilis commodi saepe, provident
+              maiores ex optio, perferendis voluptatibus vero tempore, magni dolores voluptatem a alias ea totam ipsa consectetur ullam? Laboriosam, eveniet laudantium
+              molestias accusamus commodi recusandae, nam odit non maiores dolorem sint.
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores officiis aut libero illo debitis, temporibus quis facilis commodi saepe, provident
+              maiores ex optio, perferendis voluptatibus vero tempore, magni dolores voluptatem a alias ea totam ipsa consectetur ullam? Laboriosam, eveniet laudantium
+              molestias accusamus commodi recusandae, nam odit non maiores dolorem sint.
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores officiis aut libero illo debitis, temporibus quis facilis commodi saepe, provident
+              maiores ex optio, perferendis voluptatibus vero tempore, magni dolores voluptatem a alias ea totam ipsa consectetur ullam? Laboriosam, eveniet laudantium
+              molestias accusamus commodi recusandae, nam odit non maiores dolorem sint.
+            </p>
+          </div>
+        </div>
       </div>
 
-      <!--Import jQuery & materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- My work -->
+  <div class="container-fluid mailto text-center" id="contact">
+    <a href="mailto:jespebr@stud.ntnu.no?subject=">jespebr@stud.ntnu.no</a>
+  </div>
 
-      <script type="text/javascript" src="assets/js/tab.js"></script>
+  <!-- Sosial Media -->
+  <section class="sosial-media">
+    <a href="https://www.instagram.com/jesperbry/" class="fa fa-instagram"></a>
+    <a href="https://no.linkedin.com/in/jesperbrynildsen" class="fa fa-linkedin"></a>
+    <a href="https://www.youtube.com/channel/UCTwKP9Qsc_nqwqXOUeFC6jg" class="fa fa-youtube-play"></a>
+    <a href="https://github.com/JesperBry" class="fa fa-github"></a>
+  </section>
+  </body>
 
-      <!--Script links-->
-      <script type="text/javascript">
-        document.getElementById("default").click();
-
-        $('.button-collapse').sideNav({
-            menuWidth: 300,
-            edge: 'right',
-            closeOnClick: true,
-            draggable: true,
-          }
-        );
-        $('#textarea1').trigger('autoresize');
-
-        $(document).ready(function(){
-          $('.parallax').parallax();
-        });
-      </script>
-
-    </body>
-
-    <footer>
-      <b>
-        <h6 id="copyright"><i class="material-icons">copyright</i> Jesper Brynildsen | 2018</h6>
-      </b>
-    </footer>
-
+  <!-- Footer -->
+  <footer class="text-center">
+     <b>
+       <h6 id="copyright"><i class="material-icons">copyright</i> Jesper Brynildsen | 2018</h6>
+     </b>
+   </footer>
 </html>
